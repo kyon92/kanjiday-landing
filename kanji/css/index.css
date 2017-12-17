@@ -107,6 +107,12 @@ button {
   font-size: 5rem;
   margin-top: 1rem;
 }
+
+.mainView #framer #wrapper .fiveplus-characters {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
 /* line 61, ../../src/sass/_components.scss */
 .mainView #framer #wrapper .kunyomi-one-character {
   font-size: 3.4rem;
@@ -123,9 +129,15 @@ button {
 .mainView #framer #wrapper #meaning {
   font-size: 1.4rem;
   text-transform: uppercase;
-  line-height: 3;
+  line-height: 2;
   letter-spacing: 1px;
 }
+
+.mainView #framer #wrapper #sentence {
+  font-size: 1.4rem;
+  margin-top: 1em;
+}
+
 /* line 82, ../../src/sass/_components.scss */
 .mainView .skip {
   font-size: 0.9rem;

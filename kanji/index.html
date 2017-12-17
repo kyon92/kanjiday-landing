@@ -6,7 +6,7 @@
 	    <title>Kanjiday</title>
 	    <script src="assets/jquery.min.js"></script>
 	    <script type="text/javascript" src="assets/colpick/js/colpick.js"></script>
-	    <script src="assets/angular.js"></script>
+	    <script src="assets/angular.min.js"></script>
 	    <link rel="stylesheet" type="text/css" href="css/index.css">
 	    <link rel="stylesheet" type="text/css" href="assets/colpick/css/colpick.css">
 	    <script src="app.min.js"></script>
@@ -22,7 +22,7 @@
 		        		 ng-if='vm.kanji'
 		        		 ng-style='{"color": vm.bodyBackground }' >
 		        		<p id="character"
-		        		   ng-class="{'one-character': vm.charLength.isOneChar,'two-characters': vm.charLength.isTwoChar, 'three-characters': vm.charLength.isThreeChar, 'four-characters': vm.charLength.isFourChar}"
+		        		   ng-class="{'one-character': vm.charLength.isOneChar,'two-characters': vm.charLength.isTwoChar, 'three-characters': vm.charLength.isThreeChar, 'four-characters': vm.charLength.isFourChar, 'fiveplus-characters': vm.charLength.isFivePlusChar}"
 		        		   ng-bind="vm.kanji.character"
 									 lang="ja"></p>
 		          		<p id="kunyomi"
@@ -33,6 +33,8 @@
 		          		<p id="meaning"
 		          		   ng-style='{"display" : vm.meaningDisplay}'
 		          		   ng-bind="vm.kanji.meanings[0]"></p>
+		          		 <p id="sentence" ng-bind="vm.kanji.sentencekanji"></p>
+		          		 <p id="sentence-kana" ng-bind="vm.kanji.sentencekana"></p>
 		        	</div>
 		      	</div>
 		    </div>

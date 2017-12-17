@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+    "name": "KanjiDay-modified",
+    "description": "Modified version of KanjiDay Extension",
+    "version": "1.0",
+    "permissions" : ["management"],
+    "browser_action": {
+   		"default_icon": "icon-touch.png"
+  	},
+  	"icons": { 
+  		"16": "icon-touch.png",
+        "48": "icon-touch.png",
+        "128": "icon-touch.png" 
+    },
+    "chrome_url_overrides" : {
+        "newtab": "kanji/index.html"
+    }
+ }
